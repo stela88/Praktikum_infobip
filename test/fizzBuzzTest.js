@@ -1,6 +1,6 @@
+let assert = require('assert');
 let chai = require("chai");
 let expect = chai.expect;
-let assert = require("assert");
 let should = chai.should;
 const fizzBuzz = require("../fizzBuzz.js");
 
