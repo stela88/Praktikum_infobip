@@ -5,7 +5,7 @@ let should = chai.should;
 const fizzBuzz = require("../fizzBuzz.js");
 
 
-describe('fizzbuzz problem',function(){
+describe.skip('fizzbuzz problem',function(){
     
 
     it('error if argument is not a number',function(){
