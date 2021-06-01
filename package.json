@@ -1,7 +1,6 @@
 {
   "name": "fizzbuzz",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -16,5 +15,14 @@
   },
   "dependencies": {
     "sinon": "^10.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stela88/Praktikum_infobip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stela88/Praktikum_infobip/issues"
+  },
+  "homepage": "https://github.com/stela88/Praktikum_infobip#readme",
+  "description": ""
 }
