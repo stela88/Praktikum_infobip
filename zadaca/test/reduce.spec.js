@@ -3,10 +3,10 @@ let assert = require('assert');
 let expect = chai.expect;
 let should = chai.should;
 
-const {multiply, duplicate, euros} = require("../zadaca.js");
+const {multiply, duplicate, euros} = require("../reduce.js");
 
 
-describe('multiply',function(){
+describe.skip('multiply',function(){
     
 
     it('error if argument is not a number',function(){
@@ -30,7 +30,7 @@ describe('multiply',function(){
 
 
 
-describe('euros',function(){
+describe.skip('euros',function(){
 
 
     it("counting euros: [29.76, 41.85, 46.5] should be equel 118,11", function(){
