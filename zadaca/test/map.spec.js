@@ -5,7 +5,7 @@ let should = chai.should;
 
 const {double, havle, size, getFullName, letter, animals} = require("../map.js");
 
-describe('Duplicate',function(){
+describe.skip('Duplicate',function(){
 
 
 it("function", function() {
@@ -23,7 +23,7 @@ it("Duplicate [5, 28, 42, 88, 105]", function() {
 
 });
 
-describe('Havle',function(){
+describe.skip('Havle',function(){
     
     it("Havle [10, 20, 15, 48]", function() {
         expect(havle([10, 20, 15, 48])).to.be.eql([5, 10, 7.5, 24]);
@@ -31,7 +31,7 @@ describe('Havle',function(){
 
 });
 
-describe('Size of string',function(){
+describe.skip('Size of string',function(){
     
     it("for Bilbo, Gandalf and Nazgul should return 5,7,6", function() {
         expect(size(["Bilbo", "Gandalf", "Nazgul"])).to.be.eql([5,7,6]);
@@ -43,7 +43,7 @@ describe('Size of string',function(){
 
 });
 
-describe('Full Name',function(){
+describe.skip('Full Name',function(){
     
     it("get Full Name for Malcom, Kaylee, Jayne", function() {
         expect(getFullName([
@@ -63,7 +63,7 @@ describe('Full Name',function(){
 
 });
 
-describe('Name + letter',function(){
+describe.skip('Name + letter',function(){
     
     it("adding (a) for each letter", function() {
         expect(letter("Sammy")).to.be.eql(["Sa", "aa", "ma", "ma", "ya"]);
@@ -71,7 +71,7 @@ describe('Name + letter',function(){
 
 });
 
-describe('Animals',function(){
+describe.skip('Animals',function(){
     
     it("should return what the animal likes and multiply the length of the name by 10 to get the year", function() {
         expect(animals([

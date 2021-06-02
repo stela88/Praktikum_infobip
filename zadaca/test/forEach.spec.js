@@ -1,17 +1,15 @@
-// let chai = require("chai");
-// let assert = require('assert');
-// let expect = chai.expect;
-// let should = chai.should;
+let chai = require("chai");
+let assert = require('assert');
+let expect = chai.expect;
+let should = chai.should;
 
-// const {handlePosts} = require("../forEach.js");
+const {letters} = require("../forEach.js");
 
-// describe('forEach', function() {
-//     it('forEach method exists', () => {
-//         expect(forEach).toBeDefined();
-//     });
+describe('forEach', function() {
     
-//     it('forEach is calling savePost three times', () => {
+    it('letters', () => {
+        expect(letters(["a", "b", "c"])).to.be.equal(["a", "b", "c"])
         
-//     });
-// });
+    });
+});
 
