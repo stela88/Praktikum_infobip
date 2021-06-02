@@ -5,7 +5,7 @@ let should = chai.should;
 
 const {isEven, isOdd, isPositive, checkAdult, WordLenght, isBigEnough, filterItems, maleDogs} = require("../filter.js");
 
-describe('isEven',function(){
+describe.skip('isEven',function(){
 
 
     it("checking if the number is even", function(){
@@ -14,7 +14,7 @@ describe('isEven',function(){
 
 });
 
-describe('isOdd',function(){
+describe.skip('isOdd',function(){
 
 
     it("checking if the number is odd", function(){
@@ -23,7 +23,7 @@ describe('isOdd',function(){
 
 });
 
-describe('isPositive',function(){
+describe.skip('isPositive',function(){
 
 
     it("checking if the number is positive", function(){
@@ -32,7 +32,7 @@ describe('isPositive',function(){
 
 });
 
-describe('checkAdult',function(){
+describe.skip('checkAdult',function(){
 
 
     it("checking if the person is over 18 years old", function(){
@@ -42,7 +42,7 @@ describe('checkAdult',function(){
 });
 
 
-describe('Lenght of words',function(){
+describe.skip('Lenght of words',function(){
 
 
     it("words with lenght lower than 6", function(){
@@ -51,7 +51,7 @@ describe('Lenght of words',function(){
 
 });
 
-describe('Filtering out all small values',function(){
+describe.skip('Filtering out all small values',function(){
 
 
     it("numbers higher than 10", function(){
@@ -65,7 +65,7 @@ describe('Filtering out all small values',function(){
 });
 
 
-describe('Searching in array',function(){
+describe.skip('Searching in array',function(){
 
 
     it("for fruits, when an is written, the apple and grapefruit should be returned", function(){
@@ -78,7 +78,7 @@ describe('Searching in array',function(){
 
 });
 
-describe('maleDogs',function(){
+describe.skip('maleDogs',function(){
 
 
     it("the sex of the dog should be male", function(){
