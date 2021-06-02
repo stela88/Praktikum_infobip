@@ -6,7 +6,7 @@ let should = chai.should;
 const {multiply, subtraction, euros, flaattened, removeDuplicate} = require("../reduce.js");
 
 
-describe('multiply',function(){
+describe.skip('multiply',function(){
     
 
     it('error if argument is not a number',function(){
@@ -28,7 +28,7 @@ describe('multiply',function(){
 });
 
 
-describe('euros',function(){
+describe.skip('euros',function(){
 
 
     it("counting euros: [29.76, 41.85, 46.5] should be equel 118,11", function(){
@@ -42,7 +42,7 @@ describe('euros',function(){
 
 });
 
-describe('Substraction',function(){
+describe.skip('Substraction',function(){
 
 
     it("for [200, 50, 20] should return 130", function(){
@@ -56,7 +56,7 @@ describe('Substraction',function(){
 });
 
 
-describe('Flattened',function(){
+describe.skip('Flattened',function(){
 
 
     it("to be a f", function(){
@@ -74,7 +74,7 @@ describe('Flattened',function(){
 });
 
 
-describe('Remove duplicate value',function(){
+describe.skip('Remove duplicate value',function(){
 
 
     it("removing duplicate numbers", function(){

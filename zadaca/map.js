@@ -1,10 +1,42 @@
-function isEven(n) {
-    const even = n.filter(num => num % 2 === 0)
-    return even;
+function double(doubled) {
+  number = doubled.map(n => n * 2)
+   return number;
 }
 
-function map(fn, array) {
-    if (length(array) === 0) return [];
-    return [fn(head(array))].concat(map(fn, tail(array)));
-  }
-module.exports = {map}
+function havle(halved) {
+  num = halved.map(n => n / 2)
+   return num;
+}
+
+function size(lenghts) {
+let sizeOf = lenghts.map(item => item.length);
+return sizeOf; 
+}
+
+function getFullName(persons) {
+function newName(item) {
+  var fullname = [item.firstname,item.lastname].join(" ");
+  return fullname;
+}
+return persons.map(newName);
+}
+
+function letter(name){
+const map = Array.prototype.map
+const newName = map.call(name, eachLetter => {
+    return `${eachLetter}a`;
+})
+return newName;
+}
+
+function animals(myUsers){
+const usersByLikes = myUsers.map(item => {
+  const container = {};
+  container[item.name] = item.likes;
+  container.age = item.name.length * 10;
+  return container;
+})
+  return usersByLikes;
+}
+
+module.exports = {double, havle, size, getFullName, letter, animals}
