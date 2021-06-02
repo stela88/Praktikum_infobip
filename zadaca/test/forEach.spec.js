@@ -1,33 +1,17 @@
-let chai = require("chai");
-let assert = require('assert');
-let expect = chai.expect;
-let should = chai.should;
+// let chai = require("chai");
+// let assert = require('assert');
+// let expect = chai.expect;
+// let should = chai.should;
 
-const {myFunction} = require("../forEach.js");
+// const {handlePosts} = require("../forEach.js");
 
-// describe('index',function(){
-
-
-//     it("adding indexes to numbers", function(){
-//         expect(item(['John', 'Sara', 'Jack'])).to.equal([28, 26, 88, 112])
+// describe('forEach', function() {
+//     it('forEach method exists', () => {
+//         expect(forEach).toBeDefined();
 //     });
-
-// // });
-
-// describe('double',function(){
-
-
-//     it("double numbers", function(){
-//         expect(double(2, 4, 6)).to.eql([28, 26, 88, 112])
+    
+//     it('forEach is calling savePost three times', () => {
+        
 //     });
-
 // });
 
- describe('index',function(){
-
-
-        it("adding indexes to numbers", function(){
-            expect(myFunction([65, 44, 12, 4])).to.equal([28, 26, 88, 112])
-        });
-    
-});

@@ -4,27 +4,38 @@ function multiply(arr) {
     return arr.reduce(reducer, initialValue);
 }
 
+function subtraction(numbers) {
+  const minus = ((total, num) => total - num )
+  return numbers.reduce(minus);
+}
 
 function euros(arr){
     const reducer = ((total, amount) => total + amount);
     return arr.reduce(reducer); 
 }
 
-// function flaattened(array){
-    
-// const flattened = ((accumulator, item) => {
-//     return array.reduce(flaattened, accumulator)
-//   }, [])
-// }
-
-function duplicate(double){
-let uniqueAgeGroup = (function (accumulator, currentValue) {
-  if (accumulator.indexOf(currentValue) === -1) {
-    accumulator.push(currentValue);
-  }
-  return duplicate.reduce(callback(accumulator, currentValue), initialValue);
-}, []);
-
-
+function flaattened(array){
+    const merge = ((accumulator, item) =>accumulator.concat(item));
+    return array.reduce(merge)
 }
-module.exports = {multiply, duplicate, euros}
+
+
+
+function removeDuplicate(ageGroup){
+  let uniqueAgeGroup = ageGroup.reduce(function (accumulator, currentValue) {
+    if (accumulator.indexOf(currentValue) === -1) {
+      accumulator.push(currentValue);
+    }
+    return accumulator;
+  }, []
+  );
+  return uniqueAgeGroup; 
+}
+
+
+// let ageGroup = [18, 21, 1, 1, 51, 18, 21, 5, 18, 7, 10];
+
+//   return accumulator;
+// }, []);
+
+module.exports = {multiply, subtraction,euros, flaattened, removeDuplicate}
