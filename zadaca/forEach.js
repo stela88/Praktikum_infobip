@@ -1,10 +1,10 @@
-function letters(letter){
-   let ranks = letter.forEach(function (e) {
-       return e + 1;
-    });
+// function letters(letter){
+//    let ranks = letter.forEach(function (e) {
+//        return e + 1;
+//     });
 
-    return ranks;
-}
+//     return ranks;
+// }
 
 
-module.exports = {letters}
+// module.exports = {letters}
